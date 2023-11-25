@@ -24,14 +24,14 @@ class Product {
 
 public class Test{
     public static void main(String[] args) {
-        // Create products in the basket
+
         ArrayList<Product> basket = new ArrayList<>();
         basket.add(new Product("Leather Wallet", 1100, 18, 1));
         basket.add(new Product("Umbrella", 900, 12, 4));
         basket.add(new Product("Cigarette", 200, 28, 3));
         basket.add(new Product("Honey", 100, 0, 2));
 
-        // Problem 1: Identify the product with the maximum GST amount
+
         Product maxGSTProduct = basket.get(0);
         double maxGSTAmount = maxGSTProduct.calculateGSTAmount();
 
@@ -45,7 +45,7 @@ public class Test{
 
         System.out.println("\n\n\tProduct with Maximum GST Amount: " + maxGSTProduct.productName);
 
-        // Problem 2: Calculate the total amount to be paid to the shopkeeper
+       
         double totalAmountToPay = 0;
         for (Product product : basket) {
             totalAmountToPay += product.calculateTotalCost();
